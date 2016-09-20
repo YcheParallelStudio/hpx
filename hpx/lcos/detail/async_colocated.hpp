@@ -57,7 +57,8 @@ namespace hpx { namespace detail
               , hpx::detail::async_colocated_bound_tuple<                     \
                     Action ::arguments_type                                   \
                 >::type                                                       \
-            >                                                                 \
+            >,                                                                \
+            hpx::util::unused_type                                            \
         >)                                                                    \
       , Name                                                                  \
     );                                                                        \
@@ -72,7 +73,8 @@ namespace hpx { namespace detail
               , hpx::detail::async_colocated_bound_tuple<                     \
                     Action ::arguments_type                                   \
                 >::type                                                       \
-            >                                                                 \
+            >,                                                                \
+            hpx::util::unused_type                                            \
         >)                                                                    \
       , Name                                                                  \
     );                                                                        \

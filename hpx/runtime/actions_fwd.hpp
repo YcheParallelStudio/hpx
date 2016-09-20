@@ -13,10 +13,14 @@ namespace hpx { namespace actions
     /// \cond NOINTERNAL
 
     struct HPX_EXPORT base_action;
+    struct HPX_EXPORT continuation;
 
     ///////////////////////////////////////////////////////////////////////////
     template <typename Action>
     struct transfer_action;
+
+    template <typename Action>
+    struct transfer_continuation_action;
 }}
 
 #endif
